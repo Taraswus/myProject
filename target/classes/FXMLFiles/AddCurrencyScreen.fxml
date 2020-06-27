@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/10.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.sda.budget.controllers.AddCurrencyScreenController">
+   <children>
+      <Label layoutX="34.0" layoutY="38.0" text="Dodaj walutę ">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="99.0" text="Wybierz walutę ">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="addCurrencyNameTextField" layoutX="168.0" layoutY="38.0" />
+      <Button fx:id="addCurrencyButton" layoutX="317.0" layoutY="38.0" mnemonicParsing="false" onAction="#addCurrencyOnAction" text="Dodaj" />
+      <Button fx:id="editCurrencyButton" layoutX="317.0" layoutY="99.0" mnemonicParsing="false" onAction="#editCurrencyOnAction" text="Edytuj " />
+      <Button fx:id="deleteCurrencyButton" layoutX="369.0" layoutY="99.0" mnemonicParsing="false" onAction="#deleteCurrencyOnAction" text="Usuń" />
+      <Button layoutX="363.0" layoutY="270.0" mnemonicParsing="false" onAction="#backMenu" text="Wstecz" />
+      <ComboBox fx:id="editCurrencyComboBox" layoutX="167.0" layoutY="99.0" onAction="#onActionComboBox" prefWidth="150.0" />
+   </children>
+</Pane>

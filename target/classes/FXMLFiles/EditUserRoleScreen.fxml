@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.sda.budget.controllers.EditUserRoleScreenController">
+    <children>
+        <Button fx:id="backButton" layoutX="310.0" layoutY="318.0" mnemonicParsing="false" onAction="#backListUser" text="Wstecz" />
+        <Button fx:id="editUserButton" layoutX="230.0" layoutY="318.0" mnemonicParsing="false"  onAction="#editUserOnAction" text="Edytuj" />
+        <Label layoutX="165.0" layoutY="44.0" prefHeight="21.0" prefWidth="87.0" text="Edit user" />
+        <Label layoutX="50.0" layoutY="113.0" text="Username" />
+        <Label layoutX="50.0" layoutY="145.0" text="Pasword" />
+        <Label layoutX="50.0" layoutY="217.0" prefHeight="21.0" prefWidth="56.0" text="Role" />
+        <Label fx:id="userNameTextField" layoutX="177.0" layoutY="108.0" />
+        <TextField fx:id="passwordTextField" layoutX="177.0" layoutY="140.0" />
+        <ComboBox fx:id="roleComboBox" layoutX="177.0" layoutY="174.0" onAction="#onActionComboBox" prefHeight="31.0" prefWidth="186.0" />
+        <Label fx:id="roleTextField" layoutX="177.0" layoutY="212.0" />
+        <Label layoutX="50.0" layoutY="179.0" prefHeight="21.0" prefWidth="97.0" text="Select role" />
+    </children>
+</Pane>

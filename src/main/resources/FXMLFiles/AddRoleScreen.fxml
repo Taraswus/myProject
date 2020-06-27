@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.sda.budget.controllers.AddRoleScreenController">
+   <children>
+      <Button layoutX="488.0" layoutY="511.0" mnemonicParsing="false" onAction="#backMenu" text="Wstecz">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <HBox layoutY="6.0" prefHeight="38.0" prefWidth="600.0">
+         <children>
+            <Label prefHeight="26.0" prefWidth="89.0" text="Dodaj rolę ">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="addRoleNameTextField" alignment="TOP_CENTER" />
+            <Button fx:id="addRoleButton" mnemonicParsing="false" onAction="#addRoleOnAction" text="Dodaj">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <HBox layoutY="58.0" prefHeight="38.0" prefWidth="600.0">
+         <children>
+            <Label prefHeight="30.0" prefWidth="83.0" text="Wybierz rolę" />
+            <ComboBox fx:id="editRoleComboBox" onAction="#onActionComboBox" prefWidth="150.0" />
+            <Button fx:id="editRoleButton" mnemonicParsing="false" onAction="#editRoleOnAction" text="Edytuj" />
+            <Button fx:id="deleteRoleButton" mnemonicParsing="false" onAction="#deleteRoleOnAction" text="Usuń" />
+         </children>
+      </HBox>
+   </children>
+</Pane>
